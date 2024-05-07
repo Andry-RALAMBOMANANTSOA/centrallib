@@ -1,0 +1,17 @@
+[package]
+name = "centrallib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+shared_memory = "0.12.4"
+rmp-serde = "1.1.2"  # MessagePack serialization support for Serde
+serde = { version = "1.0", features = ["derive"] }  # Serde serialization framework
+centralstruct = {path = "../centralstruct"}
+serde_json = "1.0"
+rand = "0.8.4"
+dashmap = "5.5.3"
+chrono = "0.4.38"
+nng = "1.0.1"
